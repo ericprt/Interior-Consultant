@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden bg-[#181719]">
+    <nav class="relative flex justify-between px-4 py-3 text-white lg:px-16 lg:pt-8">
+      <div class="flex h-8 items-center border border-white p-2">
+        <h4 class="font-crimson text-sm font-extralight uppercase">this interior</h4>
+      </div>
+      <ul
+        id="nav-list"
+        class="absolute right-0 top-0 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-20 bg-[#181719] transition duration-500 ease-in-out lg:static lg:mr-6 lg:h-8 lg:w-[40%] lg:translate-x-0 lg:flex-row"
+      >
+        <li class="group">
+          <a href="" class="nav-menu group-hover:border-b-white">Home</a>
+        </li>
+        <li class="group">
+          <a href="" class="nav-menu group-hover:border-b-white">Collection</a>
+        </li>
+        <li class="group">
+          <a href="" class="nav-menu group-hover:border-b-white">About</a>
+        </li>
+        <li class="group">
+          <a href="" class="nav-menu group-hover:border-b-white">Contact</a>
+        </li>
+      </ul>
+
+      <button id="hamburger" name="hamburger" type="button" class="z-10 px-1 lg:hidden">
+        <span class="hamburger-stripe origin-top-left transition duration-500 ease-in-out"></span>
+        <span class="hamburger-stripe transition duration-500 ease-in-out"></span>
+        <span class="hamburger-stripe origin-bottom-left transition duration-500 ease-in-out"></span>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-5 mb-56">
+      <div class="w-full">
+        <div class="flex flex-wrap">
+          <div class="flex w-full flex-col justify-center px-4 md:w-1/2 lg:pr-20 lg:pl-16">
+            <h1 class="font-lora text-4xl font-medium text-white">Modern Interior</h1>
+            <h2 class="mt-6 mb-6 font-montserrat text-sm font-normal text-white">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</h2>
+            <a href="" class="font-montserrat text-sm font-bold text-white">Read More →</a>
+          </div>
+          <div class="relative -z-10 w-full px-4 pt-7 md:w-1/2 lg:pr-16">
+            <img src="src/img/photo1.png" alt="" />
+            <div class="absolute top-52 right-10 flex w-[75%] flex-col bg-[#181719] p-2 shadow-2xl lg:top-[22rem] lg:right-52 lg:w-[50%]">
+              <div class="flex">
+                <img src="src/img/photo2.png" alt="" class="w-[30%] rounded-full p-2" />
+                <div class="flex flex-col justify-center font-montserrat">
+                  <h3 class="text-xs font-medium text-white">Aliza Webber</h3>
+                  <h3 class="text-[10px] font-medium text-[#828282]">Interior designer</h3>
+                </div>
+              </div>
+              <h3 class="p-2 font-lora text-lg font-bold text-white">Designed in 2020 by Aliza Webber</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="py-3">
+      <div class="w-full items-center text-center">
+        <h3 class="font-montserrat text-xs font-medium text-[#bdbdbd]">created by <a href="https://github.com/ericprt" class="font-bold hover:text-gray-400">ericpratama</a> - devChallenges.io</h3>
+      </div>
+    </footer>
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

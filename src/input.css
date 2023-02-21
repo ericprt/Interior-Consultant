@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-stripe {
+  @apply my-[6px] block h-[2px] w-6 bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.nav-menu {
+  @apply text-white font-medium hover:font-bold text-base flex py-2 px-1 font-montserrat border border-transparent;
+}
